@@ -9,7 +9,7 @@ public class PrefectureHashMap {
     public static void main(String[] args) {
         Map<Integer, String> pref = new HashMap<>();
 
-        // HashMap：データは追加した順番で格納される
+        // HashMap：データは追加した順番で格納されるが、順序が保持されない
 
         // 要素を格納
         pref.put(3, "東京都");
