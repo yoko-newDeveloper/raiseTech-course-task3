@@ -9,10 +9,7 @@ public class PrefectureHashMap {
     public static void main(String[] args) {
         Map<Integer, String> pref = new HashMap<>();
 
-     /**
-     * HashMap：マップの反復順序は保証されない
-     *  要素を追加や削除すると、反復順序が変わる可能性がある
-     */
+        // HashMap：データは追加した順番で格納される
 
         // 要素を格納
         pref.put(3, "東京都");
@@ -22,10 +19,11 @@ public class PrefectureHashMap {
         pref.put(6, "福岡県");
         pref.put(2, "宮城県");
 
-        // キー3を指定して要素を取り出す
+        // キー3を指定してデータを取り出す
         System.out.println("キー３の値");
         System.out.println(pref.get(3));
         System.out.println("");
+        System.out.println("HashMap:追加した順にデータを表示");
 
         // 全ての値を取得
         for (String value : pref.values())
