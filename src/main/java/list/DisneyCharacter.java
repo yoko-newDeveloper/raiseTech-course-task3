@@ -12,6 +12,7 @@ public class DisneyCharacter {
         character.add("ダッフィー");
         character.add("シェリーメイ");
 
+        // 拡張for文に変更
         for (String s : character) {
             System.out.println(s);
         }
