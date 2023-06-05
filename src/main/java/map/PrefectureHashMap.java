@@ -22,12 +22,12 @@ public class PrefectureHashMap {
         // キー3を指定してデータを取り出す
         System.out.println("キー３の値");
         System.out.println(pref.get(3));
-        System.out.println("");
+        System.out.println();
         System.out.println("HashMap:追加した順にデータを表示");
 
         // 全ての値を取得
         for (String value : pref.values()) System.out.println(value);
-        System.out.println("");
+        System.out.println();
         System.out.println("ソート結果");
 
         // 北からソートする
