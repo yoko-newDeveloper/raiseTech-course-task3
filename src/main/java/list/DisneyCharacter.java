@@ -5,15 +5,15 @@ import java.util.List;
 
 public class DisneyCharacter {
     public static void main(String[] args) {
-        List<String> character = new ArrayList<String>();
+        List<String> character = new ArrayList<>();
         character.add("ミッキー");
         character.add("ミニー");
         character.add("ドナルド");
         character.add("ダッフィー");
         character.add("シェリーメイ");
 
-        for (int i = 0; i < character.size(); i++) {
-            System.out.println(character.get(i));
+        for (String s : character) {
+            System.out.println(s);
         }
 
         // ドナルドをジェラトーニに上書き
