@@ -26,9 +26,10 @@ public class PrefectureHashMap {
         System.out.println("HashMap:追加した順にデータを表示");
 
         // 全ての値を取得
-        for (String value : pref.values()) System.out.println(value);
-        System.out.println();
-        System.out.println("ソート結果");
+        for (String value : pref.values())
+            System.out.println(value);
+            System.out.println();
+            System.out.println("ソート結果");
 
         // 北からソートする
         Object[] enPrefKeys = pref.keySet(). toArray();
