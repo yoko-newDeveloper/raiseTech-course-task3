@@ -5,27 +5,27 @@ import java.util.List;
 
 public class DisneyCharacter {
     public static void main(String[] args) {
-        List<String> character = new ArrayList<>();
-        character.add("ミッキー");
-        character.add("ミニー");
-        character.add("ドナルド");
-        character.add("ダッフィー");
-        character.add("シェリーメイ");
+        List<String> characters = new ArrayList<>();
+        characters.add("ミッキー");
+        characters.add("ミニー");
+        characters.add("ドナルド");
+        characters.add("ダッフィー");
+        characters.add("シェリーメイ");
 
         // 拡張for文に変更
-        for (String s : character) {
-            System.out.println(s);
+        for (String character : characters) {
+            System.out.println(character);
         }
 
         // ドナルドをジェラトーニに上書き
-        character.set(2, "ジェラトーニ");
+        characters.set(2, "ジェラトーニ");
         System.out.println("-------------");
         System.out.println("ドナルドを上書き");
-        System.out.println(character.get(2));
+        System.out.println(characters.get(2));
         System.out.println("-------------");
         System.out.println("上書き後");
 
         // 全てのデータを表示
-        character.forEach(System.out::println);
+        characters.forEach(System.out::println);
     }
 }
