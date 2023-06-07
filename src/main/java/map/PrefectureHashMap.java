@@ -1,9 +1,6 @@
 package map;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
+import java.util.*;
 
 public class PrefectureHashMap {
     public static void main(String[] args) {
@@ -23,15 +20,17 @@ public class PrefectureHashMap {
         System.out.println("キー３の値");
         System.out.println(pref.get(3));
         System.out.println();
-        System.out.println("HashMap:追加した順にデータを表示");
+        System.out.println("HashMap:追加した順が保持されない");
 
         // 全ての値を取得
-        for (String value : pref.values())
+        for (String value : pref.values()) {
             System.out.println(value);
-            System.out.println();
-            System.out.println("ソート結果");
+        }
 
-        // 北からソートする
+        System.out.println();
+        System.out.println("ソート結果");
+
+        // キーでソートしても順番に変更なし
         Object[] enPrefKeys = pref.keySet(). toArray();
         Arrays.sort(enPrefKeys);
 
