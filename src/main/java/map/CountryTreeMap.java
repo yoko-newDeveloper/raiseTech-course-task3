@@ -11,14 +11,14 @@ public class CountryTreeMap {
         // TreeMapオブジェクトの生成
         Map<String, String> country = new TreeMap<>();
 
-        // TreeMapオブジェクトにデータを追加
-        country.put("F", "France");
-        country.put("C", "China");
-        country.put("A", "America");
-        country.put("J", "Japan");
-        country.put("E", "England");
+        // TreeMapオブジェクトにランダムなキーと値を追加
+        country.put("C", "France");
+        country.put("T", "China");
+        country.put("E", "America");
+        country.put("H", "Japan");
+        country.put("Z", "England");
 
-        System.out.println("HashMap:値をソート順で表示");
+        System.out.println("TreeMap:キーのソート順で値を表示");
 
         for (String key : country.keySet()) {
             System.out.println(country.get(key));
